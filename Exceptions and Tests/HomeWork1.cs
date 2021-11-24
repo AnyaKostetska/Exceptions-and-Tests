@@ -14,17 +14,9 @@ namespace ExceptionsTestLibrary
         /// <exception cref="ArgumentException"/>
         public static double GetSolutionToLinearEquation(double a, double b, double c)
         {
-            if ( a == 0)
+            if ( a == 0 || b == 0 || c == 0)
             {
-                throw new DivideByZeroException("Value a cannot be null! Division by zero");
-            }
-            else if (b==0)
-            {
-                throw new ArgumentException("Value cannot be 0");
-            }
-            else if (c == 0)
-            {
-                throw new ArgumentException("Value cannot be 0");
+                throw new DivideByZeroException("a or b or c == 0");
             }
             return (c - b) / a;
         }
