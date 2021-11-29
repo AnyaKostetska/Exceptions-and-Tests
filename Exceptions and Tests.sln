@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsTestsLibrary", "Exceptions and Tests\ExceptionsTestsLibrary.csproj", "{5AFD3B4B-3AB7-4234-A4A4-6B53A9E99D1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionsTestsLibrary", "Exceptions and Tests\ExceptionsTestsLibrary.csproj", "{5AFD3B4B-3AB7-4234-A4A4-6B53A9E99D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F39A865C-25DF-403D-856C-FDD74937FC8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F39A865C-25DF-403D-856C-FDD74937FC8D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5AFD3B4B-3AB7-4234-A4A4-6B53A9E99D1F} = {5AFD3B4B-3AB7-4234-A4A4-6B53A9E99D1F}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{B84B88E8-60A4-4F58-B601-CCE275CEEE32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{B84B88E8-60A4-4F58-B601-CCE275CEEE32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

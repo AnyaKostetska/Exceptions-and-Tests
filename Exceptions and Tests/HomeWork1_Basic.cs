@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ExceptionsTestLibrary
+namespace ExceptionsTestsLibrary
 {
-    public class HomeWork1
+    public class HomeWork1_Basic
     {
         /// <summary>
         /// </summary>

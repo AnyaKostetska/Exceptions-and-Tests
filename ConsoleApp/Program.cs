@@ -1,5 +1,5 @@
 ﻿using System;
-using ExceptionsTestLibrary;
+using ExceptionsTestsLibrary;
 
 namespace ConsoleApp
 {
@@ -7,7 +7,20 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(HomeWork1.GetSolutionToLinearEquation(7,0,10));
+            int[] array = new int[10];
+            Random random = new Random();
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = random.Next(100);
+            }
+
+            Console.WriteLine(HomeWork3_Arrays.GetMaxValueOfArray(array));
+
+            for (int i = 1; i < array.Length; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
         }
     }
 }

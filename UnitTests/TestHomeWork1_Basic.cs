@@ -1,11 +1,11 @@
 using NUnit.Framework;
-using ExceptionsTestLibrary;
+using ExceptionsTestsLibrary;
 using System;
 
 
 namespace UnitTests
 {
-    public class Tests
+    public class TestHomeWork1_Basic
     {
 
         [TestCase(2, 5, 25, 10)]
@@ -14,7 +14,7 @@ namespace UnitTests
         public void GetSolutionToLinearEquationWhenParamsIsNotEqualZero
                     (double a, double b, double c, double expected)
         {
-            double actual = HomeWork1.GetSolutionToLinearEquation(a, b, c);
+            double actual = HomeWork1_Basic.GetSolutionToLinearEquation(a, b, c);
 
             Assert.AreEqual(expected, actual);
         }
@@ -27,7 +27,7 @@ namespace UnitTests
         {
             try
             {
-                HomeWork1.GetSolutionToLinearEquation(a, b, c);
+                HomeWork1_Basic.GetSolutionToLinearEquation(a, b, c);
             }
             catch (DivideByZeroException ex)
             {
