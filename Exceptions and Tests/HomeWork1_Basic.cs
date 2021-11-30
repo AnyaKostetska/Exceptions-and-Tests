@@ -20,5 +20,33 @@ namespace ExceptionsTestsLibrary
             }
             return (c - b) / a;
         }
+
+        public static double GetSolutionToEquation(double a, double b)
+        {
+            if (a == 0 & b == 0)
+            {
+                throw new DivideByZeroException("a or b == 0");
+            }
+
+            return ((5 * a) + (b * b)) / (b - a);
+        }
+
+        public static (double A, double B) FindAandBbyCoordinates(double x1, double y1, double x2, double y2)
+        { 
+            double A = (y1 - y2) / (x1 - x2);
+            double B = y2 - A * x2;
+            if (x1 == 0 & x2 == 0)
+            {
+                throw new DivideByZeroException("x1 - x2 == 0");
+            }
+            else if (x1 - x2 == 0)
+            {
+                throw new DivideByZeroException("x1 - x2 == 0");
+            }
+            else 
+            {
+                return (A, B);
+            }
+        }
     }
 }
