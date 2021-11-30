@@ -14,7 +14,7 @@ namespace ConsoleApp
                 array[i] = random.Next(100);
             }
 
-            Console.WriteLine(HomeWork1_Basic.FindAandBbyCoordinates(12,44,45,44));
+            Console.WriteLine(HomeWork1_Basic.FindAandBbyCoordinates(12, 44, 45, 44));
 
             //for (int i = 1; i < array.Length; i++)
             //{
