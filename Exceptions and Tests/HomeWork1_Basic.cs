@@ -35,11 +35,7 @@ namespace ExceptionsTestsLibrary
         { 
             double A = (y1 - y2) / (x1 - x2);
             double B = y2 - A * x2;
-            if (x1 == 0 & x2 == 0)
-            {
-                throw new DivideByZeroException("x1 - x2 == 0");
-            }
-            else if (x1 - x2 == 0)
+            if (x1 - x2 == 0)
             {
                 throw new DivideByZeroException("x1 - x2 == 0");
             }
